@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    { "source": "^/static/(.*)", "destination": "/static/$1" },
+    { "source": "^/favicon.png", "destination": "/favicon.png" },
+    { "source": "^/manifest.json", "destination": "/manifest.json" },
+    { "source": "^/robots.txt", "destination": "/robots.txt" },
+    { "source": "^/(.*)", "destination": "/index.html" }
+  ],
+  "build": {
+    "env": {
+      "SKIP_PREFLIGHT_CHECK": "true",
+      "MELON_MAINNET_DEPLOYMENT": "./deployments/mainnet-deployment.json",
+      "MELON_MAINNET_SUBGRAPH": "https://api.thegraph.com/subgraphs/name/melonproject/melon",
+      "MELON_MAINNET_PROVIDER": "https://eth-mainnet.alchemyapi.io/v2/6psR-xezugkJszLxxofYPY68nEQz7WQW",
+      "MELON_KOVAN_DEPLOYMENT": "./deployments/kovan-deployment.json",
+      "MELON_KOVAN_SUBGRAPH": "https://api.thegraph.com/subgraphs/name/melonproject/melon-kovan",
+      "MELON_KOVAN_PROVIDER": "https://eth-kovan.alchemyapi.io/v2/iZsZ45hhFg8Jj9gWgtXAh0wV_XPIMonS",
+      "MELON_RINKEBY_DEPLOYMENT": "./deployments/rinkeby-deployment.json",
+      "MELON_RINKEBY_SUBGRAPH": "https://api.thegraph.com/subgraphs/name/melonproject/melon-rinkeby",
+      "MELON_RINKEBY_PROVIDER": "https://eth-rinkeby.alchemyapi.io/v2/Yrh74eybb3RFCj4x8KWo6yaX0eEaPwAa",
+      "MELON_FORTMATIC_KEY": "pk_live_30DA7601B45F19D8",
+      "MELON_WALLETCONNECT_INFURA_ID": "b39a0d1b493b42fd8d9bdc8f91d2d0bb",
+      "MELON_API_GATEWAY": "https://gateway.avantgarde.finance",
+      "MELON_MAX_EXPOSURE": "50000",
+      "MELON_TELEGRAM_API": "https://bot.avantgarde.finance",
+      "MELON_RATES_API": "https://rates.avantgarde.finance",
+      "MELON_METRICS_API": "https://metrics.avantgarde.finance",
+      "MELON_KYC_VERIFY_EMAIL_API": "https://verify-email-and-wallet.avantgarde.finance",
+      "MELON_KYC_FUNDS": "0x6de6308dbed669b9c682546074c301ccba70d2c3"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Node dependencies.
+node_modules/
+
+# Ignore all generated files.
+package-lock.json
+coverage/
+build/
+
+# Ignore all dot files.
+.*
+
+# Ignore all log files.
+*.log
+
+# Allowed dot files
+!.gitignore
+!.nowignore
+!.prettierrc
+!.prettierignore
+!.travis.yml
+!.editorconfig
+!.env.defaults
+!.env.schema
+!.env.example
+!.storybook
+
+# Ignore SVGR
+svgr/
+
+.now

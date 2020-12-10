@@ -1,0 +1,22 @@
+*
+
+# Source code directories
+!src
+!src/**
+!public
+!public/**
+!deployments
+!deployments/**
+
+# Dependencies
+!package.json
+!paths.json
+!tsconfig.json
+!yarn.lock
+
+# Configuration
+!config-overrides.js
+
+# Environment variables.
+!.env.defaults
+!.env.schema
